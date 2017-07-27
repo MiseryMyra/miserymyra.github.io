@@ -10,8 +10,12 @@
 
 <div id="app" class="container">
 	<h1>MiseryMyra Demo</h1>
-
-	<vue-perfectlooper v-bind="imgurAlbumId"></vue-perfectlooper>
+	<h2>Fireworks</h2>
+	<vue-perfectlooper v-bind="fireworks"></vue-perfectlooper>
+	<h2>Ripples</h2>
+	<vue-perfectlooper v-bind="ripples"></vue-perfectlooper>
+	<h2>Spiral</h2>
+	<vue-perfectlooper v-bind="spiral"></vue-perfectlooper>
 </div>
 
 <script src="https://unpkg.com/vue@^2.3.3/dist/vue.js"></script>
@@ -21,9 +25,17 @@
 	new Vue({
 		el: '#app',
 		data: {
-			imgurAlbumId: {
+			fireworks: {
 				"id": "fireworks",
-                "srcImgurAlbumId": "w9gZt"
+				"srcImgurAlbumId": "w9gZt"
+			},
+			ripples: {
+				"id": "ripples",
+				"srcImgurAlbumId": "1UgZK"
+			},
+			spiral: {
+				"id": "spiral",
+				"srcImgurAlbumId": "OSFLR"
 			},
         }
     });
