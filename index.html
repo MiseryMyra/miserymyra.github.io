@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://admiralpotato.github.io/vue-perfectlooper/demo.css" />
+	<title>vue-perfectlooper demo</title>
+</head>
+<body>
+
+<div id="app" class="container">
+	<h1>MiseryMyra Demo</h1>
+
+	<vue-perfectlooper v-bind="imgurAlbumId"></vue-perfectlooper>
+</div>
+
+<script src="https://unpkg.com/vue@^2.3.3/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-perfectlooper"></script>
+<script>
+	Vue.component('vue-perfectlooper', VuePerfectlooper);
+	new Vue({
+		el: '#app',
+		data: {
+			imgurAlbumId: {
+				"id": "fireworks",
+                "srcImgurAlbumId": "w9gZt"
+			},
+        }
+    });
+</script>
+</body>
+</html>
