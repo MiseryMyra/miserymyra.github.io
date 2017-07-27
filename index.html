@@ -28,5 +28,18 @@
         }
     });
 </script>
+	
+<!--only for analytics-->
+<script>let module = {}; //for a no-dist package...</script>
+<script src="https://unpkg.com/load-script@1.0.0/index.js"></script>
+<script>window.loadScript = module.exports;</script>
+<script src="https://unpkg.com/vue-analytics@4.1.3/dist/vue-analytics.min.js"></script>
+<script>
+	Vue.use(VueAnalytics, {
+		id: 'UA-103564195-1'
+	});
+</script>
+<!--end analytics-->
+	
 </body>
 </html>
